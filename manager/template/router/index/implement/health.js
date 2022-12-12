@@ -1,3 +1,3 @@
 module.exports=function (req,res) {
-  res.send("route health good")
+  res.send("ok")
 }
