@@ -5,7 +5,7 @@ require('dotenv').config();
 
 //mongoose
 const mongoose = require('mongoose');
-mongoose.connect(proceess.env.MONGODB_URI)
+mongoose.connect(process.env.MONGODB_URI)
 
 //router
 let indexRouter=require("./router/index/index.js");
