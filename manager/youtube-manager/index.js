@@ -5,7 +5,7 @@ require('dotenv').config();
 
 //mongoose
 const mongoose = require('mongoose');
-const uri = "mongodb+srv://master:worker@cluster0.9rrfkpc.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://master:worker@cluster0.9rrfkpc.mongodb.net/test?retryWrites=true&w=majority";
 mongoose.connect(uri)
 
 //router
