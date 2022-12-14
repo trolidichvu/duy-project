@@ -1,4 +1,4 @@
-FROM node:10.15.2-alpine
+FROM node:gallium-alpine
 WORKDIR /root
 COPY . .
 RUN npm install

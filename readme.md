@@ -3,7 +3,8 @@
 ## ADMIN
 
 ## Manager port range (8000-9999)
-- Template 8000
+- yemplate 8000
+- youtube-manager 8001
 
 ## Worker port range (10000-49999)
 
