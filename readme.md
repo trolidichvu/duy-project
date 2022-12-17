@@ -1,6 +1,7 @@
 # Duy project
 
 ## ADMIN
+- port: 6666 
 
 ## Manager port range (8000-9999)
 - template 8000
