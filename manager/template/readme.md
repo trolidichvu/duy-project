@@ -1,1 +1,1 @@
-# Manager template
+# Template manager 
