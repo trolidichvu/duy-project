@@ -23,7 +23,7 @@ module.exports=function (req,res) {
         res.json(response);
       }else{
         response.status=1;
-        response.error="không tìm thấy host hoặc host chưa có dữ liệu"
+        response.error=err
         response.data=null;
         res.json(response);
       }
