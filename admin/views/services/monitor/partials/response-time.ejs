@@ -1,0 +1,47 @@
+<div class="row">
+  <p class="mb-4"><%=data.error%></p>
+  <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-left-success shadow h-100 py-2">
+          <div class="card-body">
+              <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1" >
+                          Thời gian phản hồi trung bình </div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800" id="time-average"></div>
+                  </div>
+                  <div class="col-auto">
+                    <i class="fa fa-clock-o fa-4x" aria-hidden="true"></i>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <canvas id="response-time-chart" style="width:100%; max-width:1000px; height:300px;"></canvas>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+  </script>
+  <script>
+    const average = arr => arr.reduce( ( p, c ) => p + c, 0 ) / arr.length;
+
+    let data={};
+    data.xValues = [<%=data['data']['xAxis']%>];
+    data.yValues = [<%=data['data']['yAxis']%>];
+    document.getElementById('time-average').innerHTML+=average(data.yValues) +' (ms)';
+    new Chart("response-time-chart", {
+      type: "line",
+      data: {
+        labels: data.xValues,
+        datasets: [{
+          pointRadius:1,
+          data: data.yValues,
+          borderColor: "red",
+          fill: false,
+          borderWidth:1
+        }]
+      },
+      options: {
+        legend: {display: false}
+      }
+    });
+  </script>
+
+</div>

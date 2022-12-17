@@ -3,6 +3,7 @@ let app=new express();
 require('dotenv').config();
 
 let indexRouter=require("./router/index/index.js");
+let serviceMonitorRouter=require("./router/manager/monitor/index.js");
 
 let bodyParser=require("body-parser");
 
@@ -14,6 +15,7 @@ app.set("view engine","ejs");
 app.use(express.static(__dirname + '/public'));
 
 app.use('/',indexRouter);
+app.use('/service/monitor',serviceMonitorRouter);
 
 
 let PORT = parseInt(process.env.PORT);
