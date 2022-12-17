@@ -7,7 +7,8 @@ module.exports=function (req,res) {
     { sort: { 'response_time_health.start': 'desc' },
     limit: 100 },
     (err,docs)=>{
-        let response=require('../../../response/index');
+      let response=require('../../../response/index');
+      if(!err&&docs.length>0){
         let data={
           host:host,
           xAxis:[],
@@ -20,5 +21,11 @@ module.exports=function (req,res) {
         }
         response.data=data;
         res.json(response);
+      }else{
+        response.status=1;
+        response.error="không tìm thấy host hoặc host chưa có dữ liệu"
+        response.data=null;
+        res.json(response);
+      }
   });
 }
