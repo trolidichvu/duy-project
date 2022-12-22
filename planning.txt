@@ -1,0 +1,40 @@
+các service tương tác với người dùng:
+	social network: youtube, twitter, fb
+	blog
+
+Các service lấy lợi ích từ bên thứ 3
+	AI tạo ảnh
+	FPT AI
+
+Các service quản lý worker run from cloud
+	glitch
+
+Các service quản lý worker run from host
+	Cloud cli
+	azure vm
+	notebook
+
+Service quản lý database
+	Mongodb
+
+Service sinh ra worker
+
+Service sinh ra account
+
+Service quản lý lưu trữ
+	lưu cứng, cdn
+
+
+Nhóm worker, worker được quản lý bởi các manager của nó, nhưng nó có thể chạy nhiều nhiệm vụ khác nhau trong khả năng của nó
+
+
+//////////////////////
+Kế hoạch 1 triệu worker
+- Xác định các loại worker
+- Xác định các container manager tham gia vào dự án
+- Xác định các service hiện tại và cách tạo, điều khiển tài khoản trên đó
+
+dự án sẽ có các loại container manager tham gia vào:
+	- manager quản lý tài khoản
+	- manager đọc mail inbox từ gmail API hoặc mail inbox
+	- manager ra lệnh tạo tài khoản

@@ -23,59 +23,65 @@
 </style>
 
 <div class="container py-5">
-    <div class="row text-center">
-      <!-- item-->
-      <div class="col-xl-3 col-sm-6 mb-5">
-        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://lh3.googleusercontent.com/-EayHV_hIyNyBjVo-4Ris0y7wix6VC4aq_58N9YIqheErr-uFK7GmWZnzbQUJJG5lSCGxvVGVNmXYFy57aTGZ_68zg=w128-h128-e365-rj-sc0x00ffffff" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-          <h5 class="mb-0">Youtube</h5><span class="small text-uppercase text-muted">Youtube bot</span>
-          <ul class="social mb-0 list-inline mt-3">
-            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
-            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-file-text-o" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- End-->
-      <!-- item-->
-      <div class="col-xl-3 col-sm-6 mb-5">
-        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://www.inspire-writer.com/blog/wp-content/uploads/2019/03/noframe_256.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-          <h5 class="mb-0">Blog</h5><span class="small text-uppercase text-muted">post something</span>
-          <ul class="social mb-0 list-inline mt-3">
-            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
-            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-file-text-o" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- End-->
-      <!-- item-->
-      <div class="col-xl-3 col-sm-6 mb-5">
-        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_mTiwHrInQ8XUgJYjcbcj2qJTE3ucIsdn_Z-2l-uq_sja8piunZ7FwW-7rMGwMuQKoFo&usqp=CAU" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-          <h5 class="mb-0">Monitor</h5><span class="small text-uppercase text-muted">manage container</span>
-          <ul class="social mb-0 list-inline mt-3">
-            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
-            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-file-text-o" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- End-->
-      <!-- item-->
-      <div class="col-xl-3 col-sm-6 mb-5">
-        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://www.cibc.com/content/dam/global-assets/icons/illustrative/grey-circle/users/add-a-contact-256x256.svg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-          <h5 class="mb-0">Create account</h5><span class="small text-uppercase text-muted">make some accounts</span>
-          <ul class="social mb-0 list-inline mt-3">
-            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
-            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-file-text-o" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- End-->
-      <div class="col-xl-3 col-sm-6 mb-5">
-        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://raw.githubusercontent.com/browserless/chrome/master/assets/browserless_logo_screen_gradient.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-          <h5 class="mb-0">Broserless.io</h5><span class="small text-uppercase text-muted">Web browser automation</span>
-          <ul class="social mb-0 list-inline mt-3">
-            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
-            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-file-text-o" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
-      </div>
+    <div class="row text-center" id="services">
+
     </div>
-  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  let arrServices=[{
+    name:'Youtube',
+    description:'Youtube bot',
+    icon:'https://lh3.googleusercontent.com/-EayHV_hIyNyBjVo-4Ris0y7wix6VC4aq_58N9YIqheErr-uFK7GmWZnzbQUJJG5lSCGxvVGVNmXYFy57aTGZ_68zg=w128-h128-e365-rj-sc0x00ffffff'
+  },{
+    name:'Blog',
+    description:'post something',
+    icon:'https://www.inspire-writer.com/blog/wp-content/uploads/2019/03/noframe_256.png'
+  },{
+    name:'Monitor',
+    description:'manage container health',
+    icon:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_mTiwHrInQ8XUgJYjcbcj2qJTE3ucIsdn_Z-2l-uq_sja8piunZ7FwW-7rMGwMuQKoFo&usqp=CAU'
+  },{
+    name:'Create account',
+    description:'add some power',
+    icon:'https://www.cibc.com/content/dam/global-assets/icons/illustrative/grey-circle/users/add-a-contact-256x256.svg'
+  },{
+    name:'Browserless.io',
+    description:'automation web browser',
+    icon:'https://raw.githubusercontent.com/browserless/chrome/master/assets/browserless_logo_screen_gradient.png'
+  },{
+    name:'Glitch',
+    description:'run a lot of workers',
+    icon:'https://cdn-1.webcatalog.io/catalog/glitch/glitch-icon-filled.png?v=1666372403963'
+  },{
+    name:'Jupyter-Notebook',
+    description:'run on notebook cloud',
+    icon:'https://cf.appdrag.com/dashboard-openvm-clo-b2d42c/uploads/Jupyter-Notebook-EF5w-udy4.png'
+  },{
+    name:'Colab',
+    description:'Google colab',
+    icon:'https://miro.medium.com/max/256/0*zNcjWYiZcJgreZAs.png'
+  },{
+    name:'Database manager',
+    description:'db cluster, uri, user pass..',
+    icon:'https://iconarchive.com/download/i62057/gianni-polito/colobrush/system-database.ico'
+  }]
+
+
+
+
+
+  for (var i = 0; i < arrServices.length; i++) {
+    $("#services").append(`<div class="col-xl-3 col-sm-6 mb-5">
+      <div class="bg-white rounded shadow-sm py-5 px-4"><img src="${arrServices[i].icon}" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+        <h5 class="mb-0">${arrServices[i].name}</h5><span class="small text-uppercase text-muted">${arrServices[i].description}</span>
+        <ul class="social mb-0 list-inline mt-3">
+          <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+          <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-file-text-o" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>`)
+  }
+
+
+</script>

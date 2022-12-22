@@ -7,7 +7,6 @@ router.get('/',(req,res)=>{
 });
 router.get('/response-time/:id',async (req,res)=>{
   let response=await utils.makeGetRequest(`${process.env.MANAGER_MONITOR_HOST}/get-host-status/${encodeURIComponent(req.params.id)}`);
-console.log(response);
   res.render('services/monitor/response-time',{data:JSON.parse(response)});
 });
 
